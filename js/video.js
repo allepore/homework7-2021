@@ -7,6 +7,9 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	var val = document.querySelector("#slider").value;
+	var volume = document.querySelector("#volume");
+	volume.innerHTML = (val + "%")
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
